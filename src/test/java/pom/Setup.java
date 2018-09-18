@@ -15,7 +15,7 @@ public class Setup {
 	public static WebDriver driver;
 
 	public void launch_Browser() {
-
+//---------
 		if (BROWSER.equalsIgnoreCase("FireFox")) {
 			System.setProperty("webdriver.firefox.marionette",
 					"D:\\Software\\Geckodriver\\geckodriver-v0.20.0-win64\\geckodriver.exe");
