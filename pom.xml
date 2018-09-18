@@ -139,10 +139,10 @@ used to identify which parts of your Java program are lacking test coverage,base
    <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.0</version>
+        <version>3.5.1</version>
         <configuration>
             <fork>true</fork>
-      		<executable>C:\Program Files\Java\jdk1.8.0_66\bin\javac.exe</executable>
+      		<executable>C:\Program Files\Java\jdk1.8.0_111\bin\javac.exe</executable>
         	<source>1.8</source>
         	<target>1.8</target>
         </configuration>
@@ -159,7 +159,7 @@ the unit tests of an application.It generates reports in two different file form
     			<includes>
  <!-- 		    <include>**/*Runner.java</include>    -->
  <!--  	   		<exclude>**/*Demo.java</exclude>	  -->
-    	   		<include>**/*RunnerMMT.java</include>
+    	   		<include>**/MyTest.java</include>
     			</includes>
     		</configuration>
   </plugin>
