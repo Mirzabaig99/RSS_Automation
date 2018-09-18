@@ -102,14 +102,14 @@ formatter.match({
   "location": "Browser_launch_Sd.user_opens_the_browser()"
 });
 formatter.result({
-  "duration": 4911147400,
+  "duration": 4892154000,
   "status": "passed"
 });
 formatter.match({
   "location": "Browser_launch_Sd.user_launches_the_URL()"
 });
 formatter.result({
-  "duration": 11889416700,
+  "duration": 10898714700,
   "status": "passed"
 });
 formatter.match({
@@ -122,7 +122,7 @@ formatter.match({
   "location": "Login_Sd.user_in_on_URL(String)"
 });
 formatter.result({
-  "duration": 9659012700,
+  "duration": 10276722700,
   "status": "passed"
 });
 formatter.scenario({
@@ -178,7 +178,7 @@ formatter.match({
   "location": "Login_Sd.user_is_on_Lopginpage()"
 });
 formatter.result({
-  "duration": 25400,
+  "duration": 63400,
   "status": "passed"
 });
 formatter.match({
@@ -191,7 +191,7 @@ formatter.match({
   "location": "Login_Sd.user_enters_in_EmployeeID_textbox(String)"
 });
 formatter.result({
-  "duration": 661056800,
+  "duration": 733051200,
   "status": "passed"
 });
 formatter.match({
@@ -204,21 +204,21 @@ formatter.match({
   "location": "Login_Sd.user_enters_in_password_textbox(String)"
 });
 formatter.result({
-  "duration": 309221200,
+  "duration": 325052800,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Sd.user_cliks_on_LoginButton()"
 });
 formatter.result({
-  "duration": 784711700,
+  "duration": 303467100,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Sd.user_should_navigate_to_homePage()"
 });
 formatter.result({
-  "duration": 2904730800,
+  "duration": 2424484100,
   "status": "passed"
 });
 });

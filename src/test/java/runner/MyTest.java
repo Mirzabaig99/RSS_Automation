@@ -20,7 +20,7 @@ import cucumber.api.junit.Cucumber;
 							}
 				 			
 				,tags = {"@Login_For_Employee"}
-				,monochrome = true
+				,monochrome = false
 				,glue = {"step_Defination"}
 				,dryRun = false
 				)
