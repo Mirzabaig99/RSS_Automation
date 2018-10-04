@@ -1,3 +1,4 @@
+@Report
 Feature: To test the functionality of report screen
 
   Background: Steps to pre-requisite

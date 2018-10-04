@@ -1,8 +1,7 @@
-@Positive_Test
 Feature: To test + the login Functionality
 
   @Login_For_Employee
-  Scenario Outline: user tries to login with valid credentials [90m# src/test/java/Feature files/Login.feature:10[0m
+  Scenario Outline: user tries to login with valid credentials [90m# Login.feature:10[0m
     [36mGiven [0m[36muser is on Lopginpage[0m
     [36mWhen [0m[36muser enters "<usermane>" in EmployeeID textbox[0m
     [36mAnd [0m[36muser enters "<Password>" in password textbox[0m
@@ -11,15 +10,22 @@ Feature: To test + the login Functionality
 
     Examples: 
 
-  Background: Steps for pre-requisite                     [90m# src/test/java/Feature files/Login.feature:4[0m
+  Background: Steps for pre-requisite                     [90m# Login.feature:4[0m
     [32mGiven [0m[32mUser opens the browser[0m                          [90m# Browser_launch_Sd.user_opens_the_browser()[0m
     [32mWhen [0m[32mUser launches the URL[0m                            [90m# Browser_launch_Sd.user_launches_the_URL()[0m
     [32mThen [0m[32mUser in on "[0m[32m[1mResource Scheduling Application[0m[32m" URL[0m [90m# Login_Sd.user_in_on_URL(String)[0m
 
-  @Positive_Test @Login_For_Employee
-  Scenario Outline: user tries to login with valid credentials [90m# src/test/java/Feature files/Login.feature:19[0m
+  @Login_For_Employee
+  Scenario Outline: user tries to login with valid credentials [90m# Login.feature:19[0m
     [32mGiven [0m[32muser is on Lopginpage[0m                                [90m# Login_Sd.user_is_on_Lopginpage()[0m
     [32mWhen [0m[32muser enters "[0m[32m[1mA2334[0m[32m" in EmployeeID textbox[0m             [90m# Login_Sd.user_enters_in_EmployeeID_textbox(String)[0m
     [32mAnd [0m[32muser enters "[0m[32m[1m123456789[0m[32m" in password textbox[0m            [90m# Login_Sd.user_enters_in_password_textbox(String)[0m
-    [32mAnd [0m[32muser cliks on LoginButton[0m                              [90m# Login_Sd.user_cliks_on_LoginButton()[0m
-    [32mThen [0m[32muser should navigate to homePage[0m                      [90m# Login_Sd.user_should_navigate_to_homePage()[0m
+    [31mAnd [0m[31muser cliks on LoginButton[0m                              [90m# Login_Sd.user_cliks_on_LoginButton()[0m
+      [31mjava.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key oginBtn_Xpath
+      	at java.util.ResourceBundle.getObject(ResourceBundle.java:450)
+      	at java.util.ResourceBundle.getString(ResourceBundle.java:407)
+      	at pom.Login_POM.Click_Login(Login_POM.java:32)
+      	at step_Defination.Login_Sd.user_cliks_on_LoginButton(Login_Sd.java:49)
+      	at ✽.And user cliks on LoginButton(Login.feature:14)
+      [0m
+    [36mThen [0m[36muser should navigate to homePage[0m                      [90m# Login_Sd.user_should_navigate_to_homePage()[0m

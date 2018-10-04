@@ -24,7 +24,7 @@ public class Report_POM {
 	public void Get_Report_Button() {
 		driver.findElement(By.xpath(bundle.getString("Download_PDF_Xpath"))).click();
 		driver.findElement(By.xpath(bundle.getString("GetReport_Xpath"))).click();
-		driver.switchTo().alert().accept();
+//		driver.switchTo().alert().accept();
 	}
 
 	

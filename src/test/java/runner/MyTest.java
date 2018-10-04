@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions( strict=true
-				 ,features = {"src/test/java/Feature files/Login.feature"}
+				 ,features = {"src/test/java/Feature files"}
 				 ,plugin = { "pretty:STDOUT","html:C:\\Users\\mirzab\\Desktop\\RCP\\Automation\\RSS_Automation\\Report\\Cucumber-pretty"
 						 	,"json:C:\\Users\\mirzab\\Desktop\\RCP\\Automation\\RSS_Automation\\Report\\cucumber.json"
 						 	,"com.cucumber.listener.ExtentCucumberFormatter:C:\\Users\\mirzab\\Desktop\\RCP\\Automation\\RSS_Automation\\Report\\cucumber-extent\\report.html" 

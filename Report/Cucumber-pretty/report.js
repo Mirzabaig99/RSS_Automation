@@ -1,16 +1,10 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/Feature files/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Login.feature");
 formatter.feature({
   "line": 2,
   "name": "To test + the login Functionality",
   "description": "",
   "id": "to-test-+-the-login-functionality",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@Positive_Test"
-    }
-  ]
+  "keyword": "Feature"
 });
 formatter.scenarioOutline({
   "line": 10,
@@ -102,14 +96,14 @@ formatter.match({
   "location": "Browser_launch_Sd.user_opens_the_browser()"
 });
 formatter.result({
-  "duration": 4892154000,
+  "duration": 7132928600,
   "status": "passed"
 });
 formatter.match({
   "location": "Browser_launch_Sd.user_launches_the_URL()"
 });
 formatter.result({
-  "duration": 10898714700,
+  "duration": 11225692400,
   "status": "passed"
 });
 formatter.match({
@@ -122,7 +116,7 @@ formatter.match({
   "location": "Login_Sd.user_in_on_URL(String)"
 });
 formatter.result({
-  "duration": 10276722700,
+  "duration": 10290380900,
   "status": "passed"
 });
 formatter.scenario({
@@ -133,10 +127,6 @@ formatter.scenario({
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
-    {
-      "line": 1,
-      "name": "@Positive_Test"
-    },
     {
       "line": 9,
       "name": "@Login_For_Employee"
@@ -178,7 +168,7 @@ formatter.match({
   "location": "Login_Sd.user_is_on_Lopginpage()"
 });
 formatter.result({
-  "duration": 63400,
+  "duration": 16500,
   "status": "passed"
 });
 formatter.match({
@@ -191,7 +181,7 @@ formatter.match({
   "location": "Login_Sd.user_enters_in_EmployeeID_textbox(String)"
 });
 formatter.result({
-  "duration": 733051200,
+  "duration": 269581600,
   "status": "passed"
 });
 formatter.match({
@@ -204,21 +194,26 @@ formatter.match({
   "location": "Login_Sd.user_enters_in_password_textbox(String)"
 });
 formatter.result({
-  "duration": 325052800,
+  "duration": 274525400,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Sd.user_cliks_on_LoginButton()"
 });
 formatter.result({
-  "duration": 303467100,
-  "status": "passed"
+  "duration": 393700,
+  "error_message": "java.util.MissingResourceException: Can\u0027t find resource for bundle java.util.PropertyResourceBundle, key oginBtn_Xpath\r\n\tat java.util.ResourceBundle.getObject(ResourceBundle.java:450)\r\n\tat java.util.ResourceBundle.getString(ResourceBundle.java:407)\r\n\tat pom.Login_POM.Click_Login(Login_POM.java:32)\r\n\tat step_Defination.Login_Sd.user_cliks_on_LoginButton(Login_Sd.java:49)\r\n\tat ✽.And user cliks on LoginButton(Login.feature:14)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Login_Sd.user_should_navigate_to_homePage()"
 });
 formatter.result({
-  "duration": 2424484100,
+  "status": "skipped"
+});
+formatter.embedding("image/png", "embedded0.png");
+formatter.after({
+  "duration": 217411300,
   "status": "passed"
 });
 });

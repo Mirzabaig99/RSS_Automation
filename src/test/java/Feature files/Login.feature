@@ -1,4 +1,4 @@
-@Positive_Test
+
 Feature: To test + the login Functionality
 
   Background: Steps for pre-requisite

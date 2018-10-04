@@ -2,19 +2,24 @@ package step_Defination;
 
 import java.io.IOException;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriverException;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pom.Login_POM;
 import pom.Setup;
 import utility.Take_ScreenShots;
-
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 
 public class Login_Sd extends Setup {
-		Take_ScreenShots screenshots = new Take_ScreenShots();
+	Take_ScreenShots screenshots = new Take_ScreenShots();
 
-	Login_POM login = new Login_POM(driver,screenshots );
-	
+	Login_POM login = new Login_POM(driver, screenshots);
+
 	@Then("^User in on \"([^\"]*)\" URL$")
 	public void user_in_on_URL(String arg1) {
 		launch_URL();
@@ -50,8 +55,21 @@ public class Login_Sd extends Setup {
 	public void user_should_navigate_to_homePage() throws IOException, InterruptedException {
 
 		Thread.sleep(2000);
-//		login.ClickReport();
+		// login.ClickReport();
 		screenshots.takeScreenShot(driver, "RCP");
 	}
 
+	@After
+	public void AfterScenario(Scenario scenario) {
+		if (scenario.isFailed()) {
+			try {
+				final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			      scenario.embed(screenshot, "image/png");
+			} catch (WebDriverException wde) {
+				System.err.println(wde.getMessage());
+			} catch (ClassCastException cce) {
+				cce.printStackTrace();
+			}
+		}
+	}
 }

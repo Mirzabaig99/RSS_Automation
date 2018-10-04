@@ -1,3 +1,4 @@
+@Schedular
 Feature: To test the functionality of Schedular screen
 
   Background: Steps to pre-requisite
